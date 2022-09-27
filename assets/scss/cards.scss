@@ -1,0 +1,246 @@
+/* 
+====================
+Template Name: EDU-FRONT-MAIN-SCSS
+Author: Muhammad Amin, Sunnat
+Author Email: shokhrukh024@gmail.com
+Version: 1.0.0
+====================
+====================
+  TABLE_OF_CONTENTS
+====================
+1. PRIMARY_STYLES_SECTION
+2. RECTANGLE_CARD_SECTION
+3. SQUARE_CARD_SECTION
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+====================
+*/
+
+/* =============== PRIMARY_STYLES_SECTION START ===============*/
+/* =============== PRIMARY_STYLES_SECTION END ===============*/
+
+/* =============== RECTANGLE_CARD_SECTION START ===============*/
+@mixin rectangle__card() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  width: 574px;
+  height: 215px;
+
+  padding: 24px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(126, 132, 140, 0.12);
+  border-radius: 12px;
+  cursor: pointer;
+
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 21px;
+
+    &_logo {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &_title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+
+    // font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    /* Black */
+    color: #1a1d1f;
+  }
+
+  &_stage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 24px;
+  }
+
+  &_lesson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    &_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+    }
+
+    &_text {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      // font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      /* identical to box height */
+
+      /* Gray */
+      color: #7e848c;
+
+      div {
+        background: #eff0f1;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 8px;
+
+        img {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+/* =============== RECTANGLE_CARD_SECTION END ===============*/
+
+/* =============== SQUARE_CARD_SECTION START ===============*/
+@mixin square__card() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  width: 378px;
+  height: 411px;
+
+  padding: 24px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(126, 132, 140, 0.12);
+  border-radius: 12px;
+  cursor: pointer;
+
+  &_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    margin-bottom: 30px;
+  }
+
+  &_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+  }
+
+  &_title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    /* Black */
+    color: #1a1d1f;
+  }
+
+  &_stage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 24px;
+  }
+
+  &_lesson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    &_info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 75%;
+    }
+
+    &_text {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      // font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      /* identical to box height */
+
+      /* Gray */
+      color: #7e848c;
+
+      div {
+        background: #eff0f1;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 8px;
+
+        img {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+/* =============== SQUARE_CARD_SECTION END ===============*/

@@ -1,0 +1,89 @@
+/* 
+====================
+Template Name: EDU-FRONT-MAIN-SCSS
+Author: Muhammad Amin, Sunnat
+Author Email: shokhrukh024@gmail.com
+Version: 1.0.0
+====================
+====================
+  TABLE_OF_CONTENTS
+====================
+1. PRIMARY_STYLES_SECTION
+2. HEADER_SECTION
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+====================
+*/
+
+/* =============== PRIMARY_STYLES_SECTION START ===============*/
+%container {
+  max-width: 1168px;
+}
+
+.ps {
+  height: 500px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.text-info {
+  color: #00bcd4 !important;
+}
+
+.mr-1px {
+  margin-right: 1px;
+}
+.mr-2px {
+  margin-right: 2px;
+}
+.mr-3px {
+  margin-right: 3px;
+}
+.mr-4px {
+  margin-right: 4px;
+}
+
+pr-1{
+  padding-right: 1rem !important;
+}
+
+.mt-22px {
+  margin-top: 22px;
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+/* =============== PRIMARY_STYLES_SECTION END ===============*/
+
+
+
+
+
+
+
+
+.wrong_text_answer {
+  color: #d82f3e;
+}
+.right_text_answer {
+  color: #2bc468 !important;
+}

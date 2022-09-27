@@ -1,0 +1,181 @@
+/* 
+====================
+Template Name: EDU-FRONT-MAIN-SCSS
+Author: Muhammad Amin, Sunnat
+Author Email: shokhrukh024@gmail.com
+Version: 1.0.0
+====================
+====================
+  TABLE_OF_CONTENTS
+====================
+1. PRIMARY_STYLES_SECTION
+2. CARD_SECTION
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+====================
+*/
+
+/* =============== PRIMARY_STYLES_SECTION START ===============*/
+/* =============== PRIMARY_STYLES_SECTION END ===============*/
+
+/* =============== CARD_SECTION START ===============*/
+.lessons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @extend %container;
+
+  &__loading_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 180px;
+    height: 48px;
+    cursor: pointer;
+
+    background: rgba(126, 132, 140, 0.14);
+    border-radius: 12px;
+    border: none;
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+
+      /* Main LIGHT */
+      color: #1a1d1f;
+    }
+
+    img {
+      margin-right: 4px;
+    }
+  }
+
+  &__breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 37px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    img {
+      transform: rotate(180deg);
+      margin-right: 6px;
+    }
+
+    .active {
+      color: #000 !important;
+    }
+
+    span {
+      color: #7e848c;
+    }
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #091b3d;
+
+    margin: 48px 0 18px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    /* Black */
+    color: #1a1d1f;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-bottom: 72px;
+
+    .rectangle__card {
+      @include rectangle__card();
+    }
+  }
+
+  &__recommended {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-bottom: 72px;
+
+    .square__card {
+      @include square__card();
+      margin-right: 11px;
+    }
+
+    .lessons__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 100%;
+
+      margin-bottom: 24px;
+
+      div {
+        display: flex;
+
+        div:first-child {
+          img {
+            transform: rotate(-180deg);
+          }
+        }
+        div {
+          background: #eff0f1;
+          border-radius: 10px;
+          width: 36px;
+          height: 36px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          margin-right: 8px;
+
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+/* =============== CARD_SECTION END ===============*/

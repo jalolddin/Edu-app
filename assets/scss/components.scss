@@ -1,0 +1,77 @@
+/* 
+====================
+Template Name: EDU-FRONT-MAIN-SCSS
+Author: Muhammad Amin
+Author Email: shokhrukh024@gmail.com
+Version: 1.0.0
+====================
+====================
+  TABLE_OF_CONTENTS
+====================
+1. DROPDOWN_SECTION
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+====================
+*/
+
+/* =============== DROPDOWN_SECTION START ===============*/
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    min-width: 265px;
+    padding: 14px;
+
+    display: none;
+    overflow: auto;
+    z-index: 400;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 24px rgba(21, 26, 36, 0.1);
+    border-radius: 12px;
+
+    &_row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      div {
+        display: flex;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .checkbox {
+        display: flex;
+        justify-content: space-between;
+
+        width: 48px;
+        background: #f4f4f4;
+        border-radius: 32px;
+      }
+    }
+
+    .line {
+      border-bottom: 1px solid rgba(21, 26, 36, 0.1);
+    }
+  }
+}
+/* =============== DROPDOWN_SECTION END ===============*/
